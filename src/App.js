@@ -1,12 +1,10 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Modal from "./components/Modal";
 import Tooltip from "./components/Tooltip";
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [isTooltipVisible, setTooltipVisible] = useState(false);
-  const buttonRef = useRef(null);
   const toggleModal = () => {
     setOpen((prev) => !prev);
   };
